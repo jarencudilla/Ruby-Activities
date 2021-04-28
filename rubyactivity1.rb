@@ -21,9 +21,12 @@ contact_data = [["ana@email.com", "123 Main st.", "555-123-4567"],
 contacts = {"Analyn Cajocson" => {}, "Avion School" => {}}
 
 
-puts contacts["Analyn Cajocson"][:email] = contact_data[0][0]
-puts contacts["Analyn Cajocson"][:address] = contact_data[0][1]
-puts contacts["Analyn Cajocson"][:phone] = contact_data[0][2]
-puts contacts["Avion School"][:email] = contact_data[1][0]
-puts contacts["Avion School"][:address] = contact_data[1][1]
-puts contacts["Avion School"][:phone] = contact_data[1][2]
+contacts["Analyn Cajocson"][:email] = contact_data[0][0]
+contacts["Analyn Cajocson"][:address] = contact_data[0][1]
+contacts["Analyn Cajocson"][:phone] = contact_data[0][2]
+contacts["Avion School"][:email] = contact_data[1][0]
+contacts["Avion School"][:address] = contact_data[1][1]
+contacts["Avion School"][:phone] = contact_data[1][2]
+
+puts "Analyn Cajocson: email: #{contacts["Analyn Cajocson"][:email]} address: #{contacts["Analyn Cajocson"][:address]} phone: #{contacts["Analyn Cajocson"][:phone]}"
+puts "Avion School: email: #{contacts["Avion School"][:email]} address: #{contacts["Avion School"][:address]} phone: #{contacts["Avion School"][:phone]}"
