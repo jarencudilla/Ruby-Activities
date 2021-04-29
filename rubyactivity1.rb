@@ -11,7 +11,7 @@ h = {a:1, b:2, c:3, d:4}
 
 h[:b]
 h[:e] = 5
-    puts "#{h}"
+    puts "h = #{h}"
 
 # contact data
 
@@ -28,5 +28,5 @@ contacts["Avion School"][:email] = contact_data[1][0]
 contacts["Avion School"][:address] = contact_data[1][1]
 contacts["Avion School"][:phone] = contact_data[1][2]
 
-puts "Analyn Cajocson: email: #{contacts["Analyn Cajocson"][:email]} address: #{contacts["Analyn Cajocson"][:address]} phone: #{contacts["Analyn Cajocson"][:phone]}"
-puts "Avion School: email: #{contacts["Avion School"][:email]} address: #{contacts["Avion School"][:address]} phone: #{contacts["Avion School"][:phone]}"
+puts "Analyn Cajocson: email: #{contact_data[0][0]} address: #{contact_data[0][1]} phone: #{contact_data[0][2]}"
+puts "Avion School: email: #{contact_data[1][0]} address: #{contact_data[1][1]} phone: #{contact_data[1][2]}"
