@@ -18,3 +18,24 @@ gamer2 = GamerLife.new("Badongpagong1", "Division2", "24")
 
 gamer1.letsgo
 gamer2.nogo
+
+
+# getter
+# manual
+# def game
+#     @game
+# end
+
+# attr_reader :game 
+
+# setter 
+# manual
+# def game=(new_game)
+#     @game = new_game
+# end
+
+# attr_writer :game
+
+
+for read/write
+attr_accessor :game 
