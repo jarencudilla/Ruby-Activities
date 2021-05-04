@@ -11,20 +11,21 @@ class Confection
   end
 end
     class BananaCake < Confection
-        def baking 
-            super  
+        def prepare 
+            baking  
         end
     end
 
     class Cupcake < BananaCake
-        def baking 
-         super 
+        def prepare
+         baking 
          puts "and Applying frosting..." 
+        
         end
     end
 
 cake1 = Cupcake.new
 cake2 = BananaCake.new
 
-cake1.baking
-cake2.baking
+cake1.prepare
+cake2.prepare
