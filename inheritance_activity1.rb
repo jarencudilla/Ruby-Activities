@@ -20,7 +20,7 @@ end
     def change_password=(password)
         @password = password
         puts "Password changed!"
-    end  
+    end 
   
     protected
     def login
@@ -33,7 +33,7 @@ end
     def admin_login
         login
     end
- 
+
     include AdminPermisson
   end
   

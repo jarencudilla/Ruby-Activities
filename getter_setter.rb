@@ -1,10 +1,10 @@
 class Profile
-attr_accessor :full_name, :age, :work
-attr_reader :address
+ attr_accessor :full_name, :age, :work
+ attr_reader :address
 
-    def initialize(full_name, age, address, work)
-    end
-  end
+ def initialize(full_name, age, address, work)
+ end
+end
   
   my_profile = Profile.new('Juan', 18, 'Bulacan', 'Instructor')
   
@@ -18,4 +18,3 @@ attr_reader :address
   puts my_profile.age
   puts my_profile.work
   puts my_profile.address
-  

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 arr = [6, 3, 1, 8, 4, 2, 10, 65, 102]
 new_arr = []
 
@@ -6,10 +8,8 @@ new_arr = []
 #   n % 2 === 0
 # end
 
-for n in arr
-  if n%2==0
-    new_arr.push(n)
-  end
+arr.each do |n|
+  new_arr.push(n) if n.even?
 end
 
 p new_arr
