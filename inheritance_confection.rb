@@ -6,7 +6,7 @@
 # and then prints "Applying frosting" for Cupcake only.
 
 class Confection
-  def baking
+  def prepare
       puts "Baking at 350 degrees for 25 minutes"
   end
 end
