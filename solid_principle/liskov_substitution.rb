@@ -4,8 +4,7 @@
 #good code?
 
 class GunStore
-    # class NotInStock < InventoryError; end
-       
+    
        def initialize(gun, ammo, quantity, price)
            @gun = gun
            @ammo = ammo
@@ -17,20 +16,6 @@ class GunStore
           @quantity * @price
        end
 end      
-    #    def select_gun_type(type)
-    #        case gun_type(type)
-    #        when "pistols"
-    #            pistols
-    #        when "shotguns"
-    #            shotguns
-    #        when "assault_rifles"
-    #            assault_rifles
-    #        when "rifle"
-    #            rifles
-    #        else  
-    #            raise NotInStock, "We're out of #{gun_type(type)}"  
-    #        end
-    #    end
 
     class Guns
         def gun_type
