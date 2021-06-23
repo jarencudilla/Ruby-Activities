@@ -1,8 +1,8 @@
-def recursive_multiply(a,b)
-  if a > 0 then
-    return b + recursive_multiply(a - 1, b )
-  elsif a < 0 then
-    return -b + recursive_multiply(a + 1, b )
+def recursive_multiply(x,y)
+  if x > 0 then
+    return y + recursive_multiply(x - 1, y )
+  elsif x < 0 then
+    return -y + recursive_multiply(x + 1, y )
   end
   return 0
 end
