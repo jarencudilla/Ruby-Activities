@@ -1,26 +1,26 @@
-#Single Responsibility Principle
+# Single Responsibility Principle
 
-#good code? 
+# good code?
 
 class GunStore
-def initialize(gun, ammo, quantity, price)
+  def initialize(gun, ammo, quantity, price)
     @gun = gun
     @ammo = ammo
     @quantity = quantity
-    @price = price    
-end
+    @price = price
+  end
 
-def purchase_total
-   @quantity * @price
-end
+  def purchase_total
+    @quantity * @price
+  end
 
-# def gun_type
-#     puts "type of gun"
-# end
+  # def gun_type
+  #     puts "type of gun"
+  # end
 
-# def ammo_type
-#     puts "type of ammo"
-# end
+  # def ammo_type
+  #     puts "type of ammo"
+  # end
 end
 
 buy_gun = GunStore.new('pistol', '9mm', 10, 500)

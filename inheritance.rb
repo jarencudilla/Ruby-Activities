@@ -10,7 +10,6 @@
 # sparky = GoodDog.new
 # puts sparky.speak
 
-
 # class Animal
 #   def speak
 #       "Hello!"
@@ -19,14 +18,13 @@
 
 # class GoodDog < Animal
 #   def speak
-#     # super + 
+#     # super +
 #     " from GoodDog Class"
 #   end
 # end
 
 # sparky = GoodDog.new
 # puts sparky.speak
-
 
 # module Swimmable
 #   def swim
@@ -43,8 +41,7 @@
 # dory = Fish.new
 # puts dory.swim
 
-
-# namespacing 
+# namespacing
 
 # module Language
 #   class Ruby
@@ -65,23 +62,21 @@
 #   end
 # end
 
-
 # protected_methods
 
 class Animal
   def initialize(age)
     @age = age
   end
+
   # def less_than_age(animal)
-  def <(animal)
-    age < animal.age
+  def <(other)
+    age < other.age
   end
 
-protected
+  protected
 
-  def age 
-    @age
-  end
+  attr_reader :age
 end
 
 fido = Animal.new(3)
@@ -89,4 +84,3 @@ cat =  Animal.new(2)
 
 puts fido < cat
 # puts fido.less_than_age(cat)
-
